@@ -4,13 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- STYLES -->
-  <title>Document</title>
   <link rel="stylesheet" href="./css/necolas.github.io_normalize.css_8.0.1_normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <main class="main-content">
+
+    <div class="container">
+      <h1 class="visuallyhidden">WAshing mashina</h1>
+      <ul class="washing-mode-list">
+        <li class="washing-mode-item washing-mode-active"">
+          <a class="washing-mode-link washing-mode-active" href="">Synthetic</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="">Wool</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="">Denim</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="">Silk</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="">Line</a>
+        </li>
+      </ul>
+
+      <p class="washing-mode-netice">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda officia rem quibusdam, pariatur qui accusamus </p>
+
+      <div class="washing-mode-info">
+
+        <button class="washing-mode-controller washing-mode-controller-prev" type="button">
+          <img class="washing-mode-controller-img" src="./img/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg" alt="" width="24" height="24">
+        </button>
+        <button class="washing-mode-controller washing-mode-controller-next" type="button">
+          <img class="washing-mode-controller-img" src="./img/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg" alt="" width="24" height="24">
+        </button>
+
+
+          <button class="start-button" type="button">Start</button>
+
+        <dl class="washing-mode-status">
+          <div class="washing-mode-status-item washing-mode-status-item-timer">
+            <dt class="washing-mode-status-heading">Timer</dt>
+            <dd class="washing-mode-status-value">45 min</dd>
+          </div>
+          <div class="washing-mode-status-item washing-mode-status-item-temperature">
+            <dt class="washing-mode-status-heading">Temperature</dt>
+            <dd class="washing-mode-status-value">cold</dd>
+          </div>
+          <div class="washing-mode-status-item  washing-mode-status-load">
+            <dt class="washing-mode-status-heading">Load</dt>
+            <dd class="washing-mode-status-value">Medium</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </main>
+
+
 
   <script src="./js/main.js"></script>
 </body>

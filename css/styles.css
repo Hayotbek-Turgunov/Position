@@ -15,11 +15,11 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial",sans-serif;
+  font-family: "Roboto","Arial",sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color: rgba(233, 122, 122, 0.751);
+  color: #fff;
 }
 
 img{
@@ -29,16 +29,154 @@ img{
 
 /* CONTAINER */
 .container{
- width: 100%;
- max-width: 1200px;
- padding-left: 50px;
- padding-right: 50px;
- margin-left: auto;
- margin-right: auto;
+  width: 100%;
+  max-width:600px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+}
+
+
+/* VISUALLY-HIDDEN */
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
 /* MAIN-CONTENT */
 .main-content{
+  padding-top: 60px;
+  padding-bottom: 60px;
   flex-grow:1;
+}
+
+/* WASHING-MODE */
+.washing-mode-list{
+  padding: 0;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.washing-mode-item:not(:last-child){
+  margin-right: 40px;
+}
+
+.washing-mode-link{
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  color:#fff;
+  opacity: 0.6;
+  text-transform: uppercase;
+  transition: opacity .4s ease;
+}
+
+.washing-mode-link:hover{
+  opacity: 1;
+}
+
+.washing-mode-active .washing-mode-link{
+  opacity: 1;
+}
+
+.washing-mode-info{
+  position: relative;
+}
+
+.washing-mode-controller-prev{
+  left: 0;
+  transform: translatex(-100%)
+}
+
+.washing-mode-controller-next{
+  right: 0;
+  transform: translatex(100%);
+}
+
+.washing-mode-netice{
+  font-size: 14px;
+  max-width: 420px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.washing-mode-controller{
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  opacity: 0.8;
+  padding:0;
+  border: 0;
+  cursor: pointer;
+}
+
+.washing-mode-controller:hover{
+  opacity:1;
+}
+
+.washing-mode-status {
+  display: flex;
+  margin: 0;
+}
+.washing-mode-status-item {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.washing-mode-status-heading {
+  color:#ff907c;
+}
+.washing-mode-status-value {
+  margin-left:0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.washing-mode-status-item-timer{
+  background-color: #555;
+}
+.washing-mode-status-item-temperature{
+  background-color: #333;
+}
+.washing-mode-status-load{
+  background-color: #111;
+}
+
+.start-button{
+  position: absolute;
+  left:16px;
+  bottom:0px;
+  width: 140px;
+  padding: 12px;
+  border:0;
+  border-radius: 5px;
+  background-color: #000;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateY(50%);
+  transition: transform .4s ease;
+}
+
+.start-button:hover{
+  transform: translateY(30%);
 }
